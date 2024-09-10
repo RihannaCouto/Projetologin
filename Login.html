@@ -8,16 +8,25 @@
 <body>
     <h1>Login</h1>
 
-    <form action="actionPessoa.php" method="post">
+    <form  method="post">
 
         <label for="nomePessoa">Usuário:</label><br>
         <input name="nomePessoa" type="text" required><br>
 
+        <p>
+
+       
         <label for="senhapessoa">Senha:</label><br>
        <input name="senhapessoa" type="password" required><br>
 
-       <input name="manterlogado" type="checkbox"><br>
-       <label for="manterlogado">Manter Logado</label><br>
+        </p>
+        
+       <label>
+
+        <input type="checkbox" name="mantelogado" value="sim" />Manter Logado
+
+       </label>
+
 
        <input name="Login" type="submit" value="Login"><br>
 
