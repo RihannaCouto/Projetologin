@@ -5,26 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro usuário </title>
 
-    <style>
-form {
+<style>
+    form {
         text-align: center;
      }
      p {
         margin: 10px 0;
      }
      body {
-        background: rgb(150, 150, 247);
+        background: rgb(180, 198, 255);
         font-family: Arial, sans-serif;
         font-size: 16px;
      }
     
-     legend {
+     h1 {
       color: #333;
       font-size: 24px;
       text-align:center
         }
-
-        
     
 
      button {
@@ -36,61 +34,48 @@ form {
       cursor: pointer;
      }
 
-
-    </style>
-
+</style>
 
 
-
+    
 </head>
 <body>
     
     <form method="post" action="#">
 
         <fieldset>
-            <legend>Cadastro de Usuário</legend>
+            <legend>Cadastro de Usuário</legend><br>
 
-            <label for="nomePessoa">Nome:</label>
+            <label for="nomePessoa">Nome:</label><br>
             <input name="nomePessoa" type="text" placeholder="Nome Completo" required><br><br>
 
        
-            <label for="emailpessoa">Email:</label>
+            <label for="emailpessoa">Email:</label><br>
             <input name="emailpessoa" type="email" placeholder="@gmail.com " required><br><br>
 
 
-            <label for="senhapessoa">Senha</label>
+            <label for="senhapessoa">Senha:</label><br>
             <input name="senhapessoa" type="password" minlength="6" required> <br><br>
 
     
-            <label for="senhapessoa">Confirmar senha:</label>
+            <label for="senhapessoa">Confirmar senha:</label><br>
             <input name="senhapessoa" type="password" minlength="6" required><br><br>
 
 
-            <label for="perfilpessoa">Perfil:</label>
-
-
-            <input name="professor" type="radio">
-            <label for="professor>Professor</label><br>
-
-
-            <input name="administrador" type="radio">
-            <label for="administrador>Administrador</label><br>
-    
-
-            <input name="jogador" type="radio">
-            <label for="jogadorJogador</label><br>
+            <label for="perfilpessoa">Perfil:</label><br>
             
-
-        </fieldset> <br> <br>
-
-
-
-        <fieldset>
+            <select name="=perfilpessoa">
+                <option value="" date-default disabled selected>Selecione um perfil</option>
+                <option value="professor">Professor</option>
+                <option value="administrador">Administrador</option>
+                <option value="jogador">Jogador</option> 
+            </select> <br><br><br><br>
+            
 
             <p> <button type=submit>Login</button></p>
 
-       </fieldset>
-       
+        </fieldset> <br> <br>
+        
 
     </form>
 
